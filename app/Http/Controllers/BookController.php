@@ -1,5 +1,7 @@
 <?php
 
+
+
 namespace App\Http\Controllers;
 
 use App\Book; // Használom a book modellt
@@ -46,6 +48,7 @@ class BookController extends Controller
    */
   public function store(Request $request)
   {
+    dump(request());
       request()->validate([
           'name' => 'required',
           'detail' => 'required',

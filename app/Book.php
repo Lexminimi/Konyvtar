@@ -1,5 +1,9 @@
 <?php
-
+/**
+* Nagyon fontos: az .env-ben  ki kell kommentelni a password és unserialize
+* paramétereket különben authentication failed hiba lép fel a Mongo serverrel
+*
+*/
 namespace App;
 
 use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
