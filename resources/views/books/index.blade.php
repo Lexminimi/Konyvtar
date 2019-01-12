@@ -2,6 +2,7 @@
 
 
 @section('content')
+@if(Auth::check())
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
@@ -45,6 +46,10 @@
 	    </tr>
 	    @endforeach
     </table>
+  @endif
+  @if(Auth::guest())
+             <a href="/login" class="btn btn-info"> You need to login to see the list!>></a>
+           @endif
 
 
 @endsection

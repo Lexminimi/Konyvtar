@@ -48,7 +48,7 @@ class BookController extends Controller
    */
   public function store(Request $request)
   {
-    dump(request());
+    //ez a request()->validate valószínűleg valami Laraveles cucc
       request()->validate([
           'name' => 'required',
           'detail' => 'required',
